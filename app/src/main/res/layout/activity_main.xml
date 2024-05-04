@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/pink"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/strawberry"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159"
+        app:srcCompat="@drawable/strawberryice" />
+
+    <ImageButton
+        android:id="@+id/choclate"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/strawberry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strawberry"
+        app:layout_constraintTop_toTopOf="@+id/strawberry"
+        app:srcCompat="@drawable/chocolate" />
+
+    <ImageButton
+        android:id="@+id/mango"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/strawberry"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/strawberry"
+        app:layout_constraintTop_toBottomOf="@+id/strawberry"
+        app:layout_constraintVertical_bias="0.16"
+        app:srcCompat="@drawable/mangoice" />
+
+    <ImageButton
+        android:id="@+id/vanilla"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/mango"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mango"
+        app:layout_constraintTop_toTopOf="@+id/mango"
+        app:srcCompat="@drawable/vanilaicecream" />
+
+    <TextView
+        android:id="@+id/finalresult"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/shapefield"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mango"
+        app:layout_constraintVertical_bias="0.602" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Shake Mixer"
+        app:layout_constraintBottom_toTopOf="@+id/choclate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/option1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/shapefield"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/finalresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mango"
+        app:layout_constraintVertical_bias="0.27" />
+
+    <TextView
+        android:id="@+id/option2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/shapefield"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/option1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/option1"
+        app:layout_constraintTop_toTopOf="@+id/option1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/mix"
+        android:layout_width="87dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="44dp"
+        android:text="MIX"
+        app:layout_constraintBottom_toTopOf="@+id/finalresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/infobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="info"
+        app:layout_constraintBottom_toTopOf="@+id/strawberry"
+        app:layout_constraintEnd_toStartOf="@+id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
